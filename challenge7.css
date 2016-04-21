@@ -1,0 +1,290 @@
+body {
+  background-color: #000;
+}
+
+body div {
+  display: inline-block;
+  width: 100px;
+  height: 75px;
+}
+
+
+/*------------------------------------------------------------
+  STAR SHAPES AND COLORS
+--------------------------------------------------------------*/
+
+.stars {
+  position: relative;
+  display: block;
+  color: #fff;
+  width: 0px;
+  height: 0px;
+}
+
+.stars:before {
+  position: absolute;
+  height: 0;
+  width: 0;
+  display: block;
+  content: '';
+}
+
+.stars:after {
+  position: absolute;
+  display: block;
+  color: #fff;
+  width: 0px;
+  height: 0px;
+  content: '';
+}
+
+.big {
+  margin: 25px 0;
+  border-right: 50px solid transparent;
+  border-bottom: 35px  solid #fff;
+  border-left: 50px solid transparent;
+}
+
+.big:before {
+  border-bottom: 40px solid #fff;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  top: -22.5px;
+  left: -32.5px;
+}
+
+.big:after {
+  top: 1.5px;
+  left: -52.5px;
+  border-right: 50px solid transparent;
+  border-bottom: 35px solid #fff;
+  border-left: 50px solid transparent;
+}
+
+.small {
+  margin: 12.5px 0;
+  border-right: 25px solid transparent;
+  border-bottom: 17.5px  solid #fff;
+  border-left: 25px solid transparent;
+}
+
+.small:before {
+  border-bottom: 20px solid #fff;
+  border-left: 7.5px solid transparent;
+  border-right: 7.5px solid transparent;
+  top: -11.25px;
+  left: -16.25px;
+}
+
+.small:after {
+  top: .75px;
+  left: -26.25px;
+  border-right: 25px solid transparent;
+  border-bottom: 17.5px solid #fff;
+  border-left: 25px solid transparent;
+}
+.point-up {
+  transform: rotate(35deg);
+}
+
+.point-up:before {
+  transform: rotate(-35deg);
+}
+
+.point-up:after {
+  transform: rotate(-70deg);
+}
+
+.point-down {
+  transform: rotate(210deg);
+}
+
+.point-down:before {
+  transform: rotate(-35deg);
+}
+
+.point-down:after {
+  transform: rotate(-70deg);
+}
+
+/*------------------------------------------------------------
+  STAR POSITIONS
+--------------------------------------------------------------*/
+
+#star1 {
+  position: absolute;
+  left: 7%;
+  top: 37%;
+}
+
+#star2 {
+  position: absolute;
+  right: 16%;
+  bottom: 10%;
+}
+
+#star3 {
+  position: absolute;
+  left: 15%;
+  bottom: 5%;
+}
+
+#star4 {
+  position: absolute;
+  left: 29%;
+  top: 90%;
+}
+
+#star5 {
+  position: absolute;
+  right: 40%;
+  top: 32%;
+}
+
+#star6 {
+  position: absolute;
+  left: 33%;
+  bottom: 69%;
+}
+
+#star7 {
+  position: absolute;
+  right: 45%;
+  top: 58%;
+}
+
+#star8 {
+  position: absolute;
+  left: 71%;
+  bottom: 41%;
+}
+
+#star9 {
+  position: absolute;
+  left: 22%;
+  top: 6%;
+}
+
+#star10 {
+  position: absolute;
+  right: 37%;
+  bottom: 17%;
+}
+
+#star11 {
+  position: absolute;
+  right: 6%;
+  top: 4%;
+}
+
+/*------------------------------------------------------------
+  SPACE INVADER SHAPE, COLOR, AND POSITION
+--------------------------------------------------------------*/
+
+.space-invader {
+  box-shadow:
+    0 0 0 1em lime,
+    0 1em 0 1em lime,
+    -2.5em 1.5em 0 .5em lime,
+    2.5em 1.5em 0 .5em lime,
+    -3em -3em 0 0 lime,
+    3em -3em 0 0 lime,
+    -2em -2em 0 0 lime,
+    2em -2em 0 0 lime,
+    -3em -1em 0 0 lime,
+    -2em -1em 0 0 lime,
+    2em -1em 0 0 lime,
+    3em -1em 0 0 lime,
+    -4em 0 0 0 lime,
+    -3em 0 0 0 lime,
+    3em 0 0 0 lime,
+    4em 0 0 0 lime,
+    -5em 1em 0 0 lime,
+    -4em 1em 0 0 lime,
+    4em 1em 0 0 lime,
+    5em 1em 0 0 lime,
+    -5em 2em 0 0 lime,
+    5em 2em 0 0 lime,
+    -5em 3em 0 0 lime,
+    -3em 3em 0 0 lime,
+    3em 3em 0 0 lime,
+    5em 3em 0 0 lime,
+    -2em 4em 0 0 lime,
+    -1em 4em 0 0 lime,
+    1em 4em 0 0 lime,
+    2em 4em 0 0 lime;
+  background: lime;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  margin: 50px 0 70px 65px;
+}
+
+#space-invader {
+  position: absolute;
+  right: 17%;
+  top: 27%;
+}
+
+/*------------------------------------------------------------
+  WEIRD SHAPE, COLOR, AND POSITION
+--------------------------------------------------------------*/
+
+#weird-shape {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  position: absolute;
+  left: 10em;
+  top: 20em;
+}
+
+.weird-body {
+  border-top: 100px solid red;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  height: 0;
+  width: 150px;
+  position: absolute;
+}
+
+.weird-head {
+  width: 0;
+  height: 0;
+  bottom: 100px;
+  left: 200px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+  position: relative;
+
+}
+
+.weird-left {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 32px solid yellow;
+  left: 75px;
+  bottom: -32px;
+  position: relative;
+}
+
+.weird-right {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 32px solid yellow;
+  left: 121px;
+  bottom: -32px;
+  position: relative;
+}
+
+
+
+/*#star1 {
+  position: absolute;
+  left: 500px;
+}*/
