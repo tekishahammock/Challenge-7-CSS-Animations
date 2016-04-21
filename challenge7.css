@@ -1,4 +1,6 @@
-body {
+.wrapper {
+  width: 100vw;
+  height: 200vh;
   background-color: #000;
 }
 
@@ -119,8 +121,8 @@ body div {
 
 #star2 {
   position: absolute;
-  right: 16%;
-  bottom: 10%;
+  left: 7%;
+  top: -60%;
 }
 
 #star3 {
@@ -131,8 +133,8 @@ body div {
 
 #star4 {
   position: absolute;
-  left: 29%;
-  top: 90%;
+  right: 37%;
+  top: -15%;
 }
 
 #star5 {
@@ -143,14 +145,14 @@ body div {
 
 #star6 {
   position: absolute;
-  left: 33%;
-  bottom: 69%;
+  right: 40%;
+  top: -65%;
 }
 
 #star7 {
   position: absolute;
-  right: 45%;
-  top: 58%;
+  left: 12%;
+  top: -84%;
 }
 
 #star8 {
@@ -161,8 +163,8 @@ body div {
 
 #star9 {
   position: absolute;
-  left: 22%;
-  top: 6%;
+  right: 6%;
+  top: -90%;
 }
 
 #star10 {
@@ -175,6 +177,12 @@ body div {
   position: absolute;
   right: 6%;
   top: 4%;
+}
+
+#star12 {
+  position: absolute;
+  left: 33%;
+  top: -1%;
 }
 
 /*------------------------------------------------------------
@@ -218,6 +226,24 @@ body div {
   height: 1em;
   overflow: hidden;
   margin: 50px 0 70px 65px;
+
+  animation-duration: 3s;
+  animation-name: attack;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes attack {
+  from {
+    position: relative;
+    right: 0px;
+  }
+
+  to {
+    position: relative;
+    right: 50px;
+  }
 }
 
 #space-invader {
@@ -227,10 +253,10 @@ body div {
 }
 
 /*------------------------------------------------------------
-  WEIRD SHAPE, COLOR, AND POSITION
+  ROCKETSHIP, COLOR, AND POSITION
 --------------------------------------------------------------*/
 
-#weird-shape {
+#rocketship {
   width: 300px;
   height: 300px;
   display: inline-block;
@@ -239,7 +265,7 @@ body div {
   top: 20em;
 }
 
-.weird-body {
+.ship-body {
   border-top: 100px solid red;
   border-left: 75px solid transparent;
   border-right: 75px solid transparent;
@@ -248,7 +274,7 @@ body div {
   position: absolute;
 }
 
-.weird-head {
+.ship-head {
   width: 0;
   height: 0;
   bottom: 100px;
@@ -260,7 +286,7 @@ body div {
 
 }
 
-.weird-left {
+.thruster-left {
   width: 0;
   height: 0;
   border-left: 25px solid transparent;
@@ -271,7 +297,7 @@ body div {
   position: relative;
 }
 
-.weird-right {
+.thruster-right {
   width: 0;
   height: 0;
   border-left: 25px solid transparent;
@@ -284,7 +310,21 @@ body div {
 
 
 
-/*#star1 {
-  position: absolute;
-  left: 500px;
-}*/
+.animation {
+  animation-duration: 1s;
+  animation-name: move;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  from {
+    position: relative;
+    top: 0px;
+  }
+
+  to {
+    postion: relative;
+    top: 700px;
+  }
+}
