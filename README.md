@@ -3,7 +3,7 @@ Nashville Software School Week #2 exercise testing student understanding of CSS 
 
 ####Deployed Site
 
-[Watch the Rocketship Fly Through the Stars](tekishahammock/Challenge-7-CSS-Animations)
+[Watch the Rocketship Fly Through the Stars](https://tekishahammock.com/Challenge-7-CSS-Animations)
 
 ![static image of rocketship, stars, and space invader](https://github.com/tekishahammock/Challenge-7-CSS-Animations/raw/master/Challenge-7-CSS-Animations-Main.png)
 
@@ -12,6 +12,4 @@ Nashville Software School Week #2 exercise testing student understanding of CSS 
 - Fork the repository to your account
 - Git clone the repository to your local machine
 - Enjoy!
-
-####License
 
